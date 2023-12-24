@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore the world and its beauty" />
+    <meta name="keywords" content="adventure, tours, explore, hiking" />
+
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="icon" type="image/x-icon" href="../img/favicon.png" />
+    <title>ADVENTURE - Events</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-non-home">
+      <h1 class="logo">Adventures</h1>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./tours.html">Tours</a></li>
+        <li><a href="./explore.html">Explore</a></li>
+        <li class="active"><a href="#">Events</a></li>
+        <li class="ctn"><a href="#">Contact</a></li>
+      </ul>
+      <img src="../img/menu-btn.png" alt="menu" class="menu-btn" />
+    </nav>
+
+    <section class="events">
+      <div class="title">
+        <h1>Upcoming Events</h1>
+        <div class="line"></div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="../img/img1.png" alt="hiker1" />
+          <h4>Everest Hike</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            illum nobis fuga ducimus molestias facilis laboriosam assumenda
+            praesentium minus magni similique velit odit ad in, cumque fugit
+            aut? Iure, consectetur.
+          </p>
+          <a href="#" class="ctn">Learn more</a>
+        </div>
+        <div class="col">
+          <img src="../img/img2.png" alt="hiker2" />
+          <h4>Walking Holidays</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            illum nobis fuga ducimus molestias facilis laboriosam assumenda
+            praesentium minus magni similique velit odit ad in, cumque fugit
+            aut? Iure, consectetur.
+          </p>
+          <a href="#" class="ctn">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <p class="address">123 Bulevar Kralja Aleksandra, Belgrade, Serbia</p>
+      <p class="copyright">Copyright &copy; 2023 ANS</p>
+    </section>
+
+    <script>
+      const menuBtn = document.querySelector('.menu-btn');
+      const navlinks = document.querySelector('.nav-links');
+      menuBtn.addEventListener('click', () => {
+        navlinks.classList.toggle('mobile-menu');
+      });
+    </script>
+  </body>
+</html>

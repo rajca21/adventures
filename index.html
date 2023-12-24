@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore the world and its beauty" />
+    <meta name="keywords" content="adventure, tours, explore, hiking" />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
+    <title>ADVENTURE - Explore the world</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 class="logo">Adventures</h1>
+      <ul class="nav-links">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="./pages/tours.html">Tours</a></li>
+        <li><a href="./pages/explore.html">Explore</a></li>
+        <li><a href="./pages/events.html">Events</a></li>
+        <li class="ctn"><a href="#">Contact</a></li>
+      </ul>
+      <img src="./img/menu-btn.png" alt="menu" class="menu-btn" />
+    </nav>
+
+    <section class="header">
+      <div class="header-content">
+        <h2>Explore The Colorful World</h2>
+        <div class="line"></div>
+        <h1>A Wonderful Gift</h1>
+        <a href="#" class="ctn">Learn more</a>
+      </div>
+    </section>
+
+    <section class="footer">
+      <p class="address">123 Bulevar Kralja Aleksandra, Belgrade, Serbia</p>
+      <p class="copyright">Copyright &copy; 2023 ANS</p>
+    </section>
+
+    <script>
+      const menuBtn = document.querySelector('.menu-btn');
+      const navlinks = document.querySelector('.nav-links');
+      menuBtn.addEventListener('click', () => {
+        navlinks.classList.toggle('mobile-menu');
+      });
+    </script>
+  </body>
+</html>
